@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>HAMKE | Request A Car</title>
+        <link rel="stylesheet" href="dist/css/bootstrap.css">
+        <script src="dist/js/bootstrap.js"></script>
+    </head>
+
+    <body>
+
+        <section class="container-fluid my-5">
+  <div class="p-4 rounded" style="background:#0f0f0f; border:2px solid #2b0f47; box-shadow:0 0 20px rgba(255,165,0,0.2); max-width:600px; margin:auto;">
+    <h4 class="text-warning text-center mb-4">Request a Car</h4>
+    <form id="requestCarForm">
+      <div class="mb-3">
+        <label class="form-label text-light">Full Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Email</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Phone Number</label>
+        <input type="tel" class="form-control" placeholder="Enter your phone" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Car Details</label>
+        <textarea class="form-control" rows="3" placeholder="Brand, Model, Year, Fuel Type..." required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Additional Notes (Optional)</label>
+        <textarea class="form-control" rows="2" placeholder="Any special requirements?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-hamke w-100">Submit Request</button>
+    </form>
+  </div>
+</section>
+
+    </body>
+</html>

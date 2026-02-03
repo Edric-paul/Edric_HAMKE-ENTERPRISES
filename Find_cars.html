@@ -1,0 +1,392 @@
+<html>
+
+<head>
+  <title>HAMKE | Find cars</title>
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <script src="dist/js/bootstrap.js">
+
+  </script>
+
+  <style>
+    /* Body*/
+    body {
+      background-color: #050505;
+      color: #eaeaea;
+      font-family: Arial, sans-serif;
+    }
+
+    /* HERO */
+    .find-hero {
+      background: linear-gradient(rgba(43, 15, 71, 0.75), rgba(43, 15, 71, 0.75)),
+        url("images/cars-bg.jpg") center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .find-hero h1 {
+      color: orange;
+      font-weight: 800;
+    }
+
+    .find-hero p {
+      max-width: 700px;
+      margin: 15px auto;
+      color: #ddd;
+    }
+
+    .btn-hamke {
+      background: orange;
+      color: #050505;
+      font-weight: bold;
+      border-radius: 30px;
+      padding: 10px 25px;
+      border: none;
+    }
+
+    /* FILTER BAR */
+    .filter-bar {
+      background: #120731;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: -40px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #2b0f47;
+    }
+
+    /* CAR CARDS */
+    .car-card {
+      background: #0f0f0f;
+      border: 1px solid #2b0f47;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-card h5 {
+      color: orange;
+    }
+
+    .car-card:hover {
+      transform: translateY(-10px);
+      border-color: orange;
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.25);
+    }
+
+    /* INFO SECTIONS */
+    .info-section {
+      background: #120731;
+      padding: 50px 25px;
+      border-radius: 18px;
+      margin: 50px 0;
+    }
+
+    .info-section h3 {
+      color: orange;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    /* CTA */
+    .cta-box {
+      background: linear-gradient(135deg, #2b0f47, #120731);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .cta-box h3 {
+      color: orange;
+    }
+
+    /* active */
+    .active {
+      text-decoration-color: black;
+      border: black solid padding 10px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <!-- Section 1 -->
+    <section>
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand text-warning fw-bold" href="">HAMKE ENTERPRISES</a>
+
+        <button class="navbar-toggler bg-warning" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link text-light " href="index.html">Home</a>
+            <a class="nav-link text-light active" href="Find_cars.html">Find Cars</a>
+            <a class="nav-link text-light" href="Car_importation-services.html">Import</a>
+            <a class="nav-link text-light" href="Rentals.html">Rentals</a>
+            <a class="nav-link text-light" href="Support.html">Support</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <hr>
+
+    <!-- End of Section 1 -->
+    <!-- section 2 -->
+    <section class="find-hero">
+      <h1>Find Your Perfect Car</h1>
+      <p>
+        Browse our wide selection of new, second-hand, and imported vehicles.
+        Quality, transparency, and reliability — all in one place.
+      </p>
+      <button class="btn-hamke mt-3">View Available Cars Below</button>
+    </section>
+    <!-- end of section 2 -->
+
+    <!-- section 3-->
+    <section class="container my-5">
+      <div class="p-4 rounded"
+        style="background:#0f0f0f; border:2px solid #2b0f47; box-shadow: 0 0 20px rgba(255,165,0,0.2);">
+        <h4 class="text-warning text-center mb-3">Explore Our Cars</h4>
+        <p class="text-light text-center mb-0">
+          Browse our selection of quality vehicles, carefully sourced and inspected to meet your standards.
+          From new to second-hand, we have the perfect car for you.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- End of Section 3 -->
+
+    <!-- Section 4 -->
+    <section class="container mt-5">
+      <div class="row g-4">
+
+        <section class="row mb-4 mt-5">
+          <div class="col-md-4">
+            <div class="car-card">
+              <img src="images/toyota prado 2018.png" alt="Toyota Prado">
+              <div class="p-3">
+                <h5>Toyota Prado 2018</h5>
+                <p>2.8L Diesel • Automatic • 65,000 km</p>
+                <p><strong>Price:</strong> KES 6,500,000</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="car-card">
+              <img src="images/audi.jpg" alt="Audi A4">
+              <div class="p-3">
+                <h5>Audi A4 2019</h5>
+                <p>2.0L Petrol • Automatic • 48,000 km</p>
+                <p><strong>Price:</strong> KES 4,200,000</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="car-card">
+              <img src="images/Toyota harrier.png" alt="Toyota Harrier">
+              <div class="p-3">
+                <h5>Toyota Harrier 2020</h5>
+                <p>2.0L Petrol • Automatic • 32,000 km</p>
+                <p><strong>Price:</strong> KES 3,800,000</p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end of section 4 -->
+
+        <!-- section 5 -->
+
+        <section class="row">
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/Corolla 2018.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Toyota Corolla 2020</h5>
+                <p>1.8L Petrol • Automatic • 40,000 km</p>
+                <p><strong>KES 2,400,000</strong></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/x-trail.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Nissan X-Trail 2019</h5>
+                <p>2.0L Diesel • Automatic • 55,000 km</p>
+                <p><strong>KES 3,200,000</strong></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/bmw320i.png" class="img-fluid">
+              <div class="p-3">
+                <h5>BMW 320i 2018</h5>
+                <p>2.0L Petrol • Automatic • 60,000 km</p>
+                <p><strong>KES 3,800,000</strong></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- end of section 5 -->
+
+
+        <!-- section 6 -->
+
+        <section class="row">
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/fortuner.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Toyota Fortuner 2017</h5>
+                <p>2.4L Diesel • Automatic • 70,000 km</p>
+                <p><strong>KES 4,900,000</strong></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/cx-5.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Mazda CX-5 2019</h5>
+                <p>2.5L Petrol • Automatic • 45,000 km</p>
+                <p><strong>KES 3,600,000</strong></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/Benz c200.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Mercedes-Benz C200 2018</h5>
+                <p>2.2L Diesel • Automatic • 58,000 km</p>
+                <p><strong>KES 4,200,000</strong></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- end of section 6 -->
+
+        <!-- section 7 -->
+        <section class="row">
+
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/forester.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Subaru Forester 2020</h5>
+                <p>2.0L Petrol • CVT • 35,000 km</p>
+                <p><strong>KES 3,300,000</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/pirus.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Toyota Prius 2016</h5>
+                <p>1.8L Hybrid • Automatic • 80,000 km</p>
+                <p><strong>KES 2,100,000</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/honda crv.png" class="img-fluid">
+              <div class="p-3">
+                <h5>Honda CR-V 2019</h5>
+                <p>2.0L Petrol • Automatic • 50,000 km</p>
+                <p><strong>KES 3,700,000</strong></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- end of section 7 -->
+
+        <!-- section 8 -->
+        <section class="row">
+
+
+          <div class="col-md-4 mb-4">
+            <div class="car-card">
+              <img src="images/tiguan2018.png" class="img-fluid">
+              <div class="p-3">
+                <h5>VW Tiguan 2018</h5>
+                <p>2.0L Diesel • Automatic • 62,000 km</p>
+                <p><strong>KES 3,900,000</strong></p>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </section>
+    <!-- end of section 8 -->
+
+    <!-- section 9 -->
+    <section class="container info-section">
+      <h3>Why Buy With Hamke Enterprises?</h3>
+      <div class="row text-center">
+        <div class="col-md-4">✔ Inspected & Verified Vehicles</div>
+        <div class="col-md-4">✔ Transparent Pricing</div>
+        <div class="col-md-4">✔ Import & Registration Support</div>
+      </div>
+    </section>
+
+    <!-- end of section 9 -->
+
+    <!-- Section 10 -->
+    <section class="container cta-box">
+      <h3>Can’t Find the Car You Want?</h3>
+      <p>Tell us what you’re looking for and we’ll source it for you.</p>
+      <a href="Car_importation-services.html" class="btn-hamke mt-3">Visit our Import Page</a>
+
+    </section>
+    <!-- end of section 10 -->
+
+    <!-- section 11 -->
+    </footer>
+    <section class="row">
+      <div class="col-md-12 " style="background-color: black; color: orange; text-align: center; padding: 10px; ">
+        <p>&copy;2026 Hamke Enterprises — Diligently Taking Action</p>
+      </div>
+
+
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<html lang="en">
+
+<head>
+  <title>HAMKE | HOME</title>
+
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <script src="dist/js/bootstrap.js"></script>
+
+  <style>
+    body {
+      background-color: #050505;
+      color: #eaeaea;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #2b0f47;
+    }
+
+    /* HERO */
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(43, 15, 71, 0.65);
+      padding: 35px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      color: orange;
+      font-weight: 800;
+    }
+
+    .btn-hamke {
+      background: orange;
+      color: #050505;
+      font-weight: bold;
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+
+    /* SERVICES */
+    .service-card {
+      background: #0f0f0f;
+      border: 1px solid #2b0f47;
+      border-radius: 14px;
+      padding: 25px;
+      transition: 0.4s;
+    }
+
+    .service-card h5 {
+      color: orange;
+    }
+
+    /* Make all cards equal height */
+    .carousel-item .row>.col-md-3 {
+      display: flex;
+    }
+
+    .carousel-item .row>.col-md-3 .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .carousel-item .row>.col-md-3 .card .card-body {
+      flex-grow: 1;
+      /* Make body stretch to fill space */
+    }
+
+    .carousel-item .row>.col-md-3 .card .card-footer {
+      margin-top: auto;
+      /* Footer stays at bottom */
+    }
+
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      border-color: orange;
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.25);
+    }
+
+    /* IMAGE EFFECT */
+    img:hover {
+      transform: scale(1.05);
+      transition: 0.6s;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2b0f47;
+    }
+
+    .foot {
+      color: orange;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* active */
+    .active {
+      text-decoration-color: black;
+      border: black solid padding 10px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Section 1 -->
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand text-warning fw-bold" href="#">HAMKE ENTERPRISES</a>
+
+      <button class="navbar-toggler bg-warning" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link text-light active" href="index.html">Home</a>
+          <a class="nav-link text-light" href="Find_cars.html">Find Cars</a>
+          <a class="nav-link text-light" href="Car_importation-services.html">Import</a>
+          <a class="nav-link text-light" href="Rentals.html">Rentals</a>
+          <a class="nav-link text-light" href="Support.html">Support</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End of Section 1 -->
+
+    <!--Section 2-->
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/audi.jpg" class="w-100" height="520">
+        </div>
+        <div class="carousel-item">
+          <img src="images/volkswagen.jpg" class="w-100" height="520">
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Move in Style</h1>
+        <p>Import • Rent • Buy </p>
+        <a href="#" class="btn mt-3  btn-hamke">Explore Services</a>
+      </div>
+    </div>
+
+    <!-- End of Section 2 -->
+
+    <!-- Section 3-->
+    <section class="container-fluid mt-5">
+      <h3 class="text-center text-warning mb-4">What We Offer</h3>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Car Importation</h5>
+            <p>Trusted sourcing and seamless importation process.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Car Rentals</h5>
+            <p>Reliable vehicles for business and personal travel.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Car Sales</h5>
+            <p>New and second-hand vehicles inspected for quality.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><br><br>
+
+    <!-- End of section 3 -->
+
+    <!-- Section 4 -->
+    <h3 class="text-center text-warning mb-4">Our Most Popular Cars</h3>
+    <div class="carousel slide" data-bs-ride="carousel" id="op">
+      <div class="carousel-inner" id="cardshadow.">
+
+        <div class="carousel-item active ">
+          <section class="row">
+
+
+            <div class="col-md-3">
+              <div class="card shadow text-center " style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>Tesla</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/Tesla2.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>Tesla vehicles deliver exceptional performance, innovative technology, and a premium driving
+                    experience. Fully electric and elegantly designed, they combine advanced safety features, impressive
+                    range, and cutting-edge connectivity for a smooth, efficient, and modern ride.</p>
+                  <span class="badge bg-danger">5 In Stalk </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" id="123">
+              <div class="card shadow text-center" style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>Mclaren</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/mclaren.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>McLaren vehicles deliver extraordinary performance, advanced engineering, and striking design.
+                    Built with Formula 1–inspired technology, they offer exceptional speed, precision handling, and an
+                    exclusive, high-performance driving experience.</p><br>
+                  <span class="badge bg-danger">2 In Stalk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+              <div class="card shadow" style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>Dodge</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/dodge.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>Dodge vehicles deliver bold performance, aggressive styling, and unmistakable American muscle.
+                    Engineered for power and durability, they combine strong engines, modern technology, and a
+                    commanding driving experience.</p><br>
+                  <span class="badge bg-danger">1 In Stalk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+              <div class="card shadow" style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>Ferari</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/Ferari.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>Ferrari vehicles deliver exceptional performance, iconic design, and racing-inspired engineering.
+                    Built for speed and precision, they combine powerful engines, advanced technology, and an exclusive,
+                    high-performance driving experience. </p><br>
+                  <span class="badge bg-danger">20 in stalk</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controller -->
+            <a href="#op" data-bs-slide="prev" class="carousel-control-prev">
+              <span class="carousel-control-prev-icon bg-warning"
+                style="border-radius: 20px; border-color: orange; background-color: black;"></span>
+            </a>
+            <a href="#op" data-bs-slide="next" class="carousel-control-next">
+              <span class="carousel-control-next-icon bg-warning " style="border-radius: 20px;">
+
+              </span></a>
+          </section>
+
+        </div>
+
+        <div class="carousel-item">
+          <section class="row">
+
+
+            <div class="col-md-3">
+              <div class="card shadow text-center" style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>Bugati</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/Bugati.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>Bugatti vehicles deliver unparalleled performance, elite craftsmanship, and iconic design.
+                    Engineered for extreme speed and precision, they combine advanced technology, luxury materials, and
+                    an exclusive, ultra-high-performance driving experience.</p><br>
+                  <span class="badge bg-danger">0 In Stalk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" id="123">
+              <div class="card shadow text-center" style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>Supra</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/Supra.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>Toyota Supra delivers exhilarating performance, sleek design, and precise engineering. Built for
+                    driving enthusiasts, it combines responsive handling, powerful engines, and modern technology for a
+                    dynamic, high-performance driving experience.</p><br>
+                  <span class="badge bg-danger">17 In Stalk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+              <div class="card shadow" style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>lamborghini</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/lambo.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>Lamborghini vehicles deliver extreme performance, bold design, and cutting-edge engineering. Built
+                    for speed and presence, they combine powerful engines, advanced technology, and an unmistakably
+                    exclusive, high-performance driving experience.</p><br>
+                  <span class="badge bg-danger">1 In Stalk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+              <div class="card shadow" style="background-color: #2b0f47; color: orange;">
+                <div class="card-header">
+                  <h6>Bentley</h6>
+                </div>
+                <div class="card-body">
+                  <img src="images/Bentley.png" alt="" width="100%" height="300px">
+                </div>
+                <div class="card-footer">
+                  <p>Bentley vehicles deliver refined luxury, exceptional craftsmanship, and powerful performance.
+                    Combining sophisticated design, advanced technology, and a smooth, commanding ride, they offer an
+                    exclusive and prestigious driving experience.</p><br><br>
+                  <span class="badge bg-danger">10 In Stalk</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controller -->
+            <a href="#op" data-bs-slide="prev" class="carousel-control-prev">
+              <span class="carousel-control-prev-icon bg-warning"
+                style="border-radius: 20px; border-color: orange; background-color: black;"></span>
+            </a>
+            <a href="#op" data-bs-slide="next" class="carousel-control-next">
+              <span class="carousel-control-next-icon bg-warning " style="border-radius: 20px;">
+
+              </span></a>
+          </section>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <hr>
+
+
+    <!-- End of section 4 -->
+
+    <!-- section 5 -->
+
+    <section class=" my-5">
+      <h3 class="text-warning text-center mb-4">Why Choose Hamke Enterprises</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Trusted Expertise</h5>
+            <p>Years of experience in car importation, sales, rentals, and insurance make us a reliable choice for all
+              automotive needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Transparent Pricing</h5>
+            <p>No hidden fees,all costs are clearly communicated from the start, giving you peace of mind.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Customer Support</h5>
+            <p>We provide dedicated assistance at every step, from sourcing vehicles to delivery and post-sale support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of section 5 -->
+
+    <!-- Section 6 -->
+
+    <section class=" my-5">
+      <h3 class="text-warning text-center mb-4">How Hamke Works</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Step 1: Choose Your Service</h5>
+            <p>Select from importation, rentals, car sales, or insurance based on your requirements.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Step 2: We Handle Everything</h5>
+            <p>Our team manages sourcing, documentation, shipping, and inspection to ensure a seamless process.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h5>Step 3: Delivery & Support</h5>
+            <p>Your vehicle is delivered safely to your location, with ongoing support for any questions or services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section 6 -->
+
+    <!-- Footer-->
+    <footer class="mt-5 p-4 text-center text-warning">
+      <section class="row foot p-4 mt-4">
+        <div class="col-md-4" style="text-align: justify; ">
+          <h4 class="text-center" style="text-decoration: underline;">About Us</h4>
+          <p>Hamke Enterprises is a leading automotive solutions provider committed to delivering exceptional services
+            in
+            car importation, rentals, sales, insurance, and spare parts. With years of experience in the industry, we
+            pride ourselves on offering seamless, reliable, and customer-focused solutions that make every automotive
+            journey effortless. Our mission is to connect clients with quality vehicles and services, ensuring safety,
+            transparency, and convenience at every step.</p>
+
+        </div>
+
+        <div class="col-md-4 " style="text-align: justify;">
+          <h4 class="text-center">Contact Us</h4>
+          <form action="">
+            <input type="email" name="" id="" placeholder="Enter Your E-mail" class="form-control" required><br>
+            <textarea name="" id="" placeholder="Leave a Comment.." cols="30" rows="6" class="form-control"
+              required></textarea><br>
+            <input type="submit" name="" id="" value="Send a message" class="btn btn-danger">
+          </form>
+        </div>
+
+        <div class="col-md-4  text-center">
+          <h4 class="text-center"> Stay Connected</h4>
+          <a href="https://www.facebook.com" target="_blank"><img src="images/fb.png" alt="facebook"></a>
+          <a href="https://www.Instagram.com" target="_blank"><img src="images/in.png" alt="Instagram"></a>
+          <a href="https://www.x.com" target="_blank"><img src="images/x.png" alt=""></a>
+          <p style="text-align: justify;">Stay connected with Hamke Enterprises and never miss an update on our latest
+            cars, import deals, rentals, and services. Follow us on social media, subscribe to our newsletter, or reach
+            out directly.We’re always here to help you move in style and make your automotive experience seamless.</p>
+        </div>
+      </section>
+
+
+    </footer>
+    <section class="row">
+      <div class="col-md-12 " style="background-color: black; color: orange; text-align: center; padding: 10px;">
+        <p>&copy;2026 Hamke Enterprises — Diligently Taking Action</p>
+      </div>
+
+    </section>
+  </div>
+</body>
+
+</html>
