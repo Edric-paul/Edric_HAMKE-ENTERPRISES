@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -59,25 +59,27 @@
       color: orange;
     }
 
-    /* Make all cards equal height */
-    .carousel-item .row>.col-md-3 {
-      display: flex;
-    }
-
-    .carousel-item .row>.col-md-3 .card {
+    /* Cards */
+    /* Make all cards same height */
+    .card {
+      height: 100%;
       display: flex;
       flex-direction: column;
-      height: 100%;
     }
 
-    .carousel-item .row>.col-md-3 .card .card-body {
-      flex-grow: 1;
-      /* Make body stretch to fill space */
+    /* Let body grow equally */
+    .card-body {
+      flex: 0 0 auto;
     }
 
-    .carousel-item .row>.col-md-3 .card .card-footer {
+    /* Push footer to the bottom */
+    .card-footer {
       margin-top: auto;
-      /* Footer stays at bottom */
+    }
+
+    /*  control text height for perfect balance */
+    .card-footer p {
+      min-height: 150px;
     }
 
 
@@ -187,17 +189,16 @@
     <!-- End of section 3 -->
 
     <!-- Section 4 -->
-    <section >
+    <section>
       <h3 class="text-center text-warning mb-4">Our Most Popular Cars</h3>
       <div class="carousel slide" data-bs-ride="carousel" id="op">
         <div class="carousel-inner" id="cardshadow.">
 
-          <div class="carousel-item active ">
+          <div class="carousel-item active">
             <section class="row">
 
-
-              <div class="col-md-3">
-                <div class="card shadow text-center " style="background-color: #2b0f47; color: orange;">
+              <div class="col-md-3 d-flex">
+                <div class="card shadow text-center" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>Tesla</h6>
                   </div>
@@ -207,14 +208,14 @@
                   <div class="card-footer">
                     <p>Tesla vehicles deliver exceptional performance, innovative technology, and a premium driving
                       experience. Fully electric and elegantly designed, they combine advanced safety features,
-                      impressive
-                      range, and cutting-edge connectivity for a smooth, efficient, and modern ride.</p>
-                    <span class="badge bg-danger">5 In Stalk </span>
+                      impressive range, and cutting-edge connectivity for a smooth, efficient, and modern ride.</p>
+                    <span class="badge bg-danger">5 In Stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
-              <div class="col-md-3" id="123">
+              <div class="col-md-3 d-flex" id="123">
                 <div class="card shadow text-center" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>Mclaren</h6>
@@ -229,9 +230,10 @@
                     <span class="badge bg-danger">2 In Stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 d-flex text-center">
                 <div class="card shadow" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>Dodge</h6>
@@ -246,9 +248,10 @@
                     <span class="badge bg-danger">1 In Stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 d-flex text-center">
                 <div class="card shadow" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>Ferari</h6>
@@ -259,12 +262,12 @@
                   <div class="card-footer">
                     <p>Ferrari vehicles deliver exceptional performance, iconic design, and racing-inspired engineering.
                       Built for speed and precision, they combine powerful engines, advanced technology, and an
-                      exclusive,
-                      high-performance driving experience. </p><br>
+                      exclusive, high-performance driving experience.</p><br>
                     <span class="badge bg-danger">20 in stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
               <!-- Controller -->
               <a href="#op" data-bs-slide="prev" class="carousel-control-prev">
@@ -272,18 +275,16 @@
                   style="border-radius: 20px; border-color: orange; background-color: black;"></span>
               </a>
               <a href="#op" data-bs-slide="next" class="carousel-control-next">
-                <span class="carousel-control-next-icon bg-warning " style="border-radius: 20px;">
+                <span class="carousel-control-next-icon bg-warning" style="border-radius: 20px;"></span>
+              </a>
 
-                </span></a>
             </section>
-
           </div>
 
           <div class="carousel-item">
             <section class="row">
 
-
-              <div class="col-md-3">
+              <div class="col-md-3 d-flex">
                 <div class="card shadow text-center" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>Bugati</h6>
@@ -294,14 +295,14 @@
                   <div class="card-footer">
                     <p>Bugatti vehicles deliver unparalleled performance, elite craftsmanship, and iconic design.
                       Engineered for extreme speed and precision, they combine advanced technology, luxury materials,
-                      and
-                      an exclusive, ultra-high-performance driving experience.</p><br>
+                      and an exclusive, ultra-high-performance driving experience.</p><br>
                     <span class="badge bg-danger">0 In Stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
-              <div class="col-md-3" id="123">
+              <div class="col-md-3 d-flex" id="123">
                 <div class="card shadow text-center" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>Supra</h6>
@@ -312,14 +313,14 @@
                   <div class="card-footer">
                     <p>Toyota Supra delivers exhilarating performance, sleek design, and precise engineering. Built for
                       driving enthusiasts, it combines responsive handling, powerful engines, and modern technology for
-                      a
-                      dynamic, high-performance driving experience.</p><br>
+                      a dynamic, high-performance driving experience.</p><br>
                     <span class="badge bg-danger">17 In Stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 d-flex text-center">
                 <div class="card shadow" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>lamborghini</h6>
@@ -329,15 +330,15 @@
                   </div>
                   <div class="card-footer">
                     <p>Lamborghini vehicles deliver extreme performance, bold design, and cutting-edge engineering.
-                      Built
-                      for speed and presence, they combine powerful engines, advanced technology, and an unmistakably
-                      exclusive, high-performance driving experience.</p><br>
+                      Built for speed and presence, they combine powerful engines, advanced technology, and an
+                      unmistakably exclusive, high-performance driving experience.</p><br>
                     <span class="badge bg-danger">1 In Stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 d-flex text-center">
                 <div class="card shadow" style="background-color: #2b0f47; color: orange;">
                   <div class="card-header">
                     <h6>Bentley</h6>
@@ -352,7 +353,8 @@
                     <span class="badge bg-danger">10 In Stalk</span>
                   </div>
                 </div>
-              </div><hr>
+              </div>
+              <hr>
 
               <!-- Controller -->
               <a href="#op" data-bs-slide="prev" class="carousel-control-prev">
@@ -360,19 +362,15 @@
                   style="border-radius: 20px; border-color: orange; background-color: black;"></span>
               </a>
               <a href="#op" data-bs-slide="next" class="carousel-control-next">
-                <span class="carousel-control-next-icon bg-warning " style="border-radius: 20px;">
+                <span class="carousel-control-next-icon bg-warning" style="border-radius: 20px;"></span>
+              </a>
 
-                </span></a>
             </section>
-
           </div>
 
         </div>
-
-
       </div>
       <hr>
-
     </section>
 
     <!-- End of section 4 -->
